@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Scanner;
 
-
-
 public class Client extends RouteFinder
 {
     public static RouteFinder routeFinder = new RouteFinder();
@@ -14,13 +12,11 @@ public class Client extends RouteFinder
     {
         Scanner scanner = new Scanner(System.in);
         String decision = "Y";
-
         while(decision.equals("Y"))
         {
             // Collects users desired destination.
             System.out.print("Please enter a letter that your destination starts with: ");
             String destination = scanner.next();
-//            String dest = destination.toUpperCase();
             String url = "https://www.communitytransit.org/busservice/schedules/";
 
             // Get URL text.
@@ -28,6 +24,8 @@ public class Client extends RouteFinder
 
             // Create map to store destination and routes.
             Map hashMap = routeFinder.getBusRoutesUrls(urlText, destination.toUpperCase().charAt(0));
+
+            System.out.println(hashMap);
 
             // Collects users desired bus route.
             System.out.print("\nPlease enter a route ID as a string: ");
