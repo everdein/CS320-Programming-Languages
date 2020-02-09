@@ -30,7 +30,7 @@ public interface IRouteFinder
      * @return key/value map of the stops grouped by destination To/From with key is destination To
      * (e.g. To Bellevue) and value is the list of stops in the same order that it was parsed on
      */
-    Map<String, List<Pair<String, String>>> getRouteStops(final Map<String, String> busRoutesUrls, final String routeId);
+    Map<String, List<Pair<String, String>>> getRouteStops(final Map<String, String> busRoutesUrls, final String routeId) throws IOException;
 }
 
 /* We used list and not map because we want tp preserve the order of the stops which is ascending on the way to

@@ -25,7 +25,7 @@ public class Client extends RouteFinder
             // Create map to store destination and routes.
             Map hashMap = routeFinder.getBusRoutesUrls(urlText, destination.toUpperCase().charAt(0));
 
-            System.out.println(hashMap);
+//            System.out.println(hashMap);
 
             // Collects users desired bus route.
             System.out.print("\nPlease enter a route ID as a string: ");
