@@ -33,11 +33,12 @@ public interface IRouteFinder
     Map<String, List<Pair<String, String>>> getRouteStops(final Map<String, String> busRoutesUrls, final String routeId) throws IOException;
 }
 
-/* We used list and not map because we want tp preserve the order of the stops which is ascending on the way to
+/* We used list and not map because we want to preserve the order of the stops which is ascending on the way to
 destination and descending on the way back. A list will keep the order that we put stuff in. We used a pair
 to avoid defining a custom class like
 
-class myStop {
+class myStop
+{
     String stopNumer;
     String stopName;
 }

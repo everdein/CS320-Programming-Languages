@@ -57,6 +57,7 @@ public class RouteFinder implements IRouteFinder
     @Override
     public Map<String, List<Pair<String, String>>> getRouteStops(Map<String, String> busRoutesUrls, String routeId) throws IOException
     {
+
         String routeUrl = busRoutesUrls.get(routeId);
         System.out.println("The URl for your route is: " + routeUrl);
         String text = collectHTMLText(routeUrl);
@@ -68,23 +69,20 @@ public class RouteFinder implements IRouteFinder
         {
             String destination = matcher1.group(1);
             System.out.println("Destination: " + destination);
-            String regexStop = "<h2>Weekday<small>" + destination + "</small></h2>[\\w[\\W]]+?</tr>";
+            String regexStop = "<h2>Weekday<small>" + destination + "</small>[\\w[\\W]]+?(?:<strong class=\"fa fa-stack-1x\">(.*)</strong>[\\w[\\W]]+?(?:<p>(.*)</p>)[\\w[\\W]]+?)+?(</thead>)+?";
             Pattern pattern2 = Pattern.compile(regexStop);
             Matcher matcher2 = pattern2.matcher(text);
             while(matcher2.find())
             {
-//                String regexStopName = "<h2>Weekday<small>" + destination + "</small></h2>[\\w[\\W]]+?(?:<strong class=\"fa fa-stack-1x\">(.*)</strong>)[\\w[\\W]]+?(?:<p>(.*)</p>[\\w[\\W]]+?</th>)";
-//                Pattern pattern3 = Pattern.compile(regexStopName);
-//                Matcher matcher3 = pattern3.matcher(text);
-
-                String regexStopName = "<h2>Weekday<small>" + destination + "</small></h2>[\\w[\\W]]+?<h2>";
+                String regexStopName = "<h2>Weekday<small>" + destination + "</small>[\\w[\\W]]+?(?:<strong class=\"fa fa-stack-1x\">(.*)</strong>[\\w[\\W]]+?(?:<p>(.*)</p>)[\\w[\\W]]+?)+?(</thead>)+?";
                 Pattern pattern3 = Pattern.compile(regexStopName);
                 Matcher matcher3 = pattern3.matcher(text);
 
                 while(matcher3.find())
                 {
-//                    System.out.println("Stop number: " + matcher3.group(1) + " is " + matcher3.group(2));
                     System.out.println(matcher3.group(0));
+                    System.out.println("Stop number: " + matcher3.group(1) + " is " + matcher3.group(2));
+
                 }
             }
         }
