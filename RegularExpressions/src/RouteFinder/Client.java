@@ -30,8 +30,8 @@ public class Client extends RouteFinder
             // Collects users desired bus route.
             System.out.print("\nPlease enter a route ID as a string: ");
             String routeID = scanner.next();
-            routeFinder.getRouteStops(hashMap, routeID);
-
+            hashMap = routeFinder.getRouteStops(hashMap, routeID);
+            System.out.println(hashMap);
             // Asks user to lookup another destination, or to close program.
             System.out.print("Do you want to check different destination? Please type Y to continue or press any other key to exit.");
             decision = scanner.next();

@@ -1,12 +1,12 @@
 package RouteFinder;
 
 import javafx.util.Pair;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,6 +57,9 @@ public class RouteFinder implements IRouteFinder
     @Override
     public Map<String, List<Pair<String, String>>> getRouteStops(Map<String, String> busRoutesUrls, String routeId) throws IOException
     {
+        Pair<String, String> pair;
+        List<Pair<String, String>> list = new ArrayList<>();
+        Map<String, List<Pair<String, String>>> hashMap = new HashMap<>();
 
         String routeUrl = busRoutesUrls.get(routeId);
         System.out.println("The URl for your route is: " + routeUrl);
@@ -80,11 +83,14 @@ public class RouteFinder implements IRouteFinder
                 Matcher matcher3 = pattern3.matcher(routesText);
                 while(matcher3.find())
                 {
-                    System.out.println("Stop number: " + matcher3.group(1) + " is " + matcher3.group(2));
+//                    System.out.println("Stop number: " + matcher3.group(1) + " is " + matcher3.group(2));
+                    Pair p1 = new Pair(matcher3.group(1), matcher3.group(2));
+                    list.add(p1);
+                    hashMap.put(destination, list);
                 }
             }
         }
-        return null;
+        return hashMap;
     }
 
     public String collectHTMLText(String url) throws IOException
