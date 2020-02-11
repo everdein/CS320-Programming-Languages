@@ -69,20 +69,18 @@ public class RouteFinder implements IRouteFinder
         {
             String destination = matcher1.group(1);
             System.out.println("Destination: " + destination);
-            String regexStop = "<h2>Weekday<small>" + destination + "</small>[\\w[\\W]]+?(?:<strong class=\"fa fa-stack-1x\">(.*)</strong>[\\w[\\W]]+?(?:<p>(.*)</p>)[\\w[\\W]]+?)+?(</thead>)+?";
+            String regexStop = "<h2>Weekday<small>" + destination + "</small>[\\w[\\W]]+?</thead>";
             Pattern pattern2 = Pattern.compile(regexStop);
             Matcher matcher2 = pattern2.matcher(text);
             while(matcher2.find())
             {
-                String regexStopName = "<h2>Weekday<small>" + destination + "</small>[\\w[\\W]]+?(?:<strong class=\"fa fa-stack-1x\">(.*)</strong>[\\w[\\W]]+?(?:<p>(.*)</p>)[\\w[\\W]]+?)+?(</thead>)+?";
+                String regexStopName = "<strong class=\"fa fa-stack-1x\">(.*)</strong>[\\w[\\W]]+?<p>(.*)</p>";
+                String routesText = matcher2.group(0);
                 Pattern pattern3 = Pattern.compile(regexStopName);
-                Matcher matcher3 = pattern3.matcher(text);
-
+                Matcher matcher3 = pattern3.matcher(routesText);
                 while(matcher3.find())
                 {
-                    System.out.println(matcher3.group(0));
                     System.out.println("Stop number: " + matcher3.group(1) + " is " + matcher3.group(2));
-
                 }
             }
         }
