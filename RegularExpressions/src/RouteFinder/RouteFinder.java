@@ -71,7 +71,7 @@ public class RouteFinder implements IRouteFinder
         while(matcher1.find())
         {
             String destination = matcher1.group(1);
-            System.out.println("Destination: " + destination);
+//            System.out.println("Destination: " + destination);
             String regexStop = "<h2>Weekday<small>" + destination + "</small>[\\w[\\W]]+?</thead>";
             Pattern pattern2 = Pattern.compile(regexStop);
             Matcher matcher2 = pattern2.matcher(text);
