@@ -37,16 +37,6 @@ public interface tasksListener extends ParseTreeListener {
 	 */
 	void exitFunction(tasksParser.FunctionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link tasksParser#operator}.
-	 * @param ctx the parse tree
-	 */
-	void enterOperator(tasksParser.OperatorContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link tasksParser#operator}.
-	 * @param ctx the parse tree
-	 */
-	void exitOperator(tasksParser.OperatorContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link tasksParser#parameter}.
 	 * @param ctx the parse tree
 	 */

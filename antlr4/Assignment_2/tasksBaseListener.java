@@ -51,18 +51,6 @@ public class tasksBaseListener implements tasksListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOperator(tasksParser.OperatorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitOperator(tasksParser.OperatorContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterParameter(tasksParser.ParameterContext ctx) { }
 	/**
 	 * {@inheritDoc}

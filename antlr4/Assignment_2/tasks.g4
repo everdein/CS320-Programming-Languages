@@ -1,19 +1,32 @@
 grammar tasks;
 
 start 
-	: task task task task task 
+	: task task task task task
 	;
 
 task 
 	: function 
 	;
 
+//function
+//	: operator '<-' 'function' '(' parameter ')' '{' action '}' 
+//	| operator '<-' 'function' '(' parameter ')' '{' action action '}'
+//	;
+
+//operator
+//	: 'add'
+//	| 'subtract'
+//	| 'multiply'
+//	| 'divide'
+//	| 'countdown'
+//	;
+
 function
-	: operator '<-' 'function' '(' parameter ')' '{' action '}' 
-	| operator '<-' 'function' '(' parameter ')' '{' action action '}'
+	: STRING '<-' 'function' '(' parameter ')' '{' action '}' 
+	| STRING '<-' 'function' '(' parameter ')' '{' action action '}'
 	;
 
-operator
+STRING
 	: 'add'
 	| 'subtract'
 	| 'multiply'
