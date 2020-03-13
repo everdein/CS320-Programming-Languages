@@ -117,18 +117,84 @@ class Worksheet8:
         print(count)
         print(my_set)
 
+    # Question 9
+    @staticmethod
+    def multiply(num_list):
+        sum = 1
+        for num in num_list:
+            sum = num * sum
+        print(sum)
+
+    # Question 10
+    @staticmethod
+    def isPalindrome(str_list):
+        for word in str_list:
+            i = 0
+            j = len(word) - 1
+            if(word[i] == word[j]):
+                # print(word[i], word[j])
+                i = i + 1
+                j = j - 1
+            else:
+                print("Word is not palindrome")
+                break
+            print("Word is palindrome")
+
+    # Question 11
+    @staticmethod
+    def match_words(str_list):
+        count = 0
+        for word in str_list:
+            last = len(word) - 1
+            if(len(word) >= 2):
+                if(word[0] == word[last]):
+                    count = count + 1
+        print(count)
+
+    # Question 12
+    @staticmethod
+    def string_reverse(str):
+        temp = ""
+        for ch in str:
+            temp = ch + temp
+        print(temp)
+
+    # Question 13
+    @staticmethod
+    def is_valid_parenthese(str):
+        open_stack = []
+        close_stack = []
+        for ch in str:
+            if(ch == '{' or ch == '[' or ch == '('):
+                open_stack.append(ch)
+            else:
+                close_stack.append(ch)
+        if(len(open_stack) == len(close_stack)):
+            print("True")
+        else:
+            print("False")
+
+    # Question 14
+
+
 
 # Main
 if __name__ == '__main__':
     exercise = Worksheet8()
-    exercise.name()
-    exercise.alphabet_a()
+    # exercise.name()
+    # exercise.alphabet_a()
     # exercise.alphabet_b() # not meant to work
-    exercise.alphabet_c()
-    exercise.alphabet_d()
-    exercise.prime()
-    exercise.roll_six()
-    print(exercise.sign(-1, 1))
-    exercise.rotate_right(num_list = [1, 2, 3, 4])
-    exercise.remove_even_length(str_list = ["to", "be", "or", "not", "to", "be"])
-    exercise.num_unique(num_list = [3, 7, 3, -1, 2, 3, 7, 2, 15, 15])
+    # exercise.alphabet_c()
+    # exercise.alphabet_d()
+    # exercise.prime()
+    # exercise.roll_six()
+    # print(exercise.sign(-1, 1))
+    # exercise.rotate_right(num_list = [1, 2, 3, 4])
+    # exercise.remove_even_length(str_list = ["to", "be", "or", "not", "to", "be"])
+    # exercise.num_unique(num_list = [3, 7, 3, -1, 2, 3, 7, 2, 15, 15])
+    # exercise.multiply(num_list = [8, 2, 3, -1, 7])
+    # exercise.isPalindrome(str_list = ["aza", "anna", "hello"])
+    # exercise.match_words(str_list = ['abc', 'xyz', 'aba', '1221'])
+    # exercise.string_reverse("cba4321")
+    # exercise.is_valid_parenthese("(){}{{}}}")
+    exercise.threeSum(int_list = [-25, -10, -7, -3, 2, 4, 8, 10])
