@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6aa4aa9c-7825-4997-a0c4-734b7732b045" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Python/Assignment3/grammar_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python/Assignment3/grammar_generator.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Z5dFpBpTL6kEOmBtOrQT0ikqAN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
+      <module name="SyntaxExample" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloWorld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="SyntaxExample" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="scala [file:/Users/matthewclark/Documents/GitHub/CS320%20Programming%20Languages/Scala/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="SyntaxExample-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3168265574302" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3652017426" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1244562550" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6aa4aa9c-7825-4997-a0c4-734b7732b045" name="Default Changelist" comment="" />
+      <created>1584132787132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584132787132</updated>
+      <workItem from="1584132788781" duration="473000" />
+      <workItem from="1584133304866" duration="1065000" />
+      <workItem from="1584134408322" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="877" y="277" key="#Project_Structure" timestamp="1584132948161">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="877" y="277" key="#Project_Structure/0.23.1920.1177@0.23.1920.1177" timestamp="1584132948161" />
+    <state x="891" y="307" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1584133352838">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="891" y="307" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1584133352838" />
+    <state width="1243" height="329" key="GridCell.Tab.0.bottom" timestamp="1584134370909">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1243" height="329" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1584134370909" />
+    <state width="1243" height="329" key="GridCell.Tab.0.center" timestamp="1584134370908">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1243" height="329" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1584134370908" />
+    <state width="1243" height="329" key="GridCell.Tab.0.left" timestamp="1584134370908">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1243" height="329" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1584134370908" />
+    <state width="1243" height="329" key="GridCell.Tab.0.right" timestamp="1584134370908">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1243" height="329" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1584134370908" />
+    <state x="765" y="193" key="SettingsEditor" timestamp="1584133338669">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="765" y="193" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1584133338669" />
+    <state x="654" y="338" key="new project wizard" timestamp="1584134346892">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="654" y="338" key="new project wizard/0.23.1920.1177@0.23.1920.1177" timestamp="1584134346892" />
+  </component>
+</project>

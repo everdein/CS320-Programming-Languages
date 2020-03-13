@@ -1,0 +1,7 @@
+Page 5 Task 1 Output
+
+Hello, world!
+Peggy, is 
+21 year old
+Sum is = 35
+This is function1
