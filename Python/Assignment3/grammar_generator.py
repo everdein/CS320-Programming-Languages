@@ -1,9 +1,9 @@
 class GrammarGenerator:
     @staticmethod
     def get_file_name():
-        # print("What is the file name?")
-        # file_name = input()
-        file_name = "simple.txt"
+        print("What is the file name?")
+        file_name = input()
+        # file_name = "simple.txt"
         # file_name = "sentence.txt"
         g.read_file(file_name)
 
@@ -14,13 +14,13 @@ class GrammarGenerator:
             for line in file:
                 (key, val) = line.split('::=')
                 d1[str(key)] = {}
-                strippedVal = val.strip()
-                for stripped in strippedVal.split('|'):
+                strippedval = val.strip()
+                for stripped in strippedval.split('|'):
                     d1[str(key)][stripped] = stripped
         print(d1)
         for val in d1.values():
             print(val)
-        # g.get_user_input(d1)
+        g.get_user_input(d1)
 
     @staticmethod
     def get_user_input(d1):

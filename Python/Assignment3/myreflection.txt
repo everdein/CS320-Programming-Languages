@@ -1,0 +1,8 @@
+Matthew Clark
+CS320 Programming Languages
+March 13, 2020
+Assignment 3 – Part 2
+
+	Looking back on the languages I’ve used so far, there’s one that stands out above the rest, Java. Java uses the Object-Oriented Programming (OOP) paradigm. This allows objects to be viewed as separate entities and operate independently. These objects are encapsulated and organized into classes where they inherit methods and variables. 
+	The most distinguishing feature of the OOP paradigm is the use of inheritance. Inheritance gives OOP it’s major benefit over other programming paradigms due to its easy code reuse and extension without the need to change existing source code. Extension is a system design principle that provides for future growth. Therefore, I would choose OOP and Java to build real-world applications such as Android applications, Java web applications, software tools, etc.
+
