@@ -1,4 +1,7 @@
+# This class is a grammar generator.
 class GrammarGenerator:
+
+    # Asks the user what file to read.
     @staticmethod
     def get_file_name():
         print("What is the file name?")
@@ -7,6 +10,7 @@ class GrammarGenerator:
         # file_name = "sentence.txt"
         g.read_file(file_name)
 
+    # Stores dictionary of non-terminals and then a dictionary of terminals
     @staticmethod
     def read_file(file_name):
         d1 = {}
@@ -22,6 +26,8 @@ class GrammarGenerator:
             print(val)
         # g.get_user_input(d1)
 
+    # Informs the user what symbols are available in the dictionary
+    # and asks the user what to generate and how many.
     @staticmethod
     def get_user_input(d1):
         print("Available symbols to generate are:")
@@ -32,11 +38,13 @@ class GrammarGenerator:
         num = input()
         g.recursion_formula(generate, num)
 
+    # Recursion formula to iterate through non-terminal and terminal grammar
     @staticmethod
     def recursion_formula(generate, num):
         print(generate, num)
 
 
+# Calls methods in GrammarGenerator.
 if __name__ == '__main__':
     g = GrammarGenerator
     g.get_file_name()
